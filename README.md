@@ -25,13 +25,13 @@ EinoLab is an open learning lab that collects experiments, code snippets, and st
 
 ## 🧠 Understanding Eino at a Glance
 
-| Concept | Summary |
-| --- | --- |
-| **Composable Graph Runtime** | Eino models AI workflows as typed computational graphs. Nodes encapsulate model invocations or business logic, while edges represent data flow and control signals. |
+| Concept                           | Summary                                                                                                                                                               |
+|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Composable Graph Runtime**      | Eino models AI workflows as typed computational graphs. Nodes encapsulate model invocations or business logic, while edges represent data flow and control signals.   |
 | **Unified Operator Abstractions** | Operators provide a consistent API over heterogeneous backends (LLMs, embedding models, vector stores, tools), allowing teams to swap providers with minimal changes. |
-| **Streaming-First Design** | Built-in support for streaming inputs/outputs makes it easier to build responsive agent-style experiences. |
-| **Production Observability** | Telemetry hooks and standardized tracing integrate with CloudWeGo's observability stack for debugging distributed AI pipelines. |
-| **Enterprise Readiness** | Emphasizes reliability, multi-language support, and integration with ByteDance's CloudWeGo microservice ecosystem.
+| **Streaming-First Design**        | Built-in support for streaming inputs/outputs makes it easier to build responsive agent-style experiences.                                                            |
+| **Production Observability**      | Telemetry hooks and standardized tracing integrate with CloudWeGo's observability stack for debugging distributed AI pipelines.                                       |
+| **Enterprise Readiness**          | Emphasizes reliability, multi-language support, and integration with ByteDance's CloudWeGo microservice ecosystem.                                                    |
 
 ## 🚀 Getting Started
 
