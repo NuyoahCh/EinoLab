@@ -24,9 +24,24 @@ func main() {
 		schema.SystemMessage("你是一个爱唠叨的老妈"),
 		schema.UserMessage("提醒我每天早睡早起"),
 	}
-	respose, err := model.Generate(ctx, input)
+	// respose, err := model.Generate(ctx, input)
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// print(respose.Content)
+
+	reader, err := model.Stream(ctx, input)
 	if err != nil {
 		panic(err)
 	}
-	print(respose.Content)
+	defer reader.Close()
+
+	for {
+		chunk, err := reader.Recv()
+		if err != nil {
+			panic(err)
+		}
+
+		print(chunk.Content)
+	}
 }
